@@ -8,19 +8,19 @@ export default function Contact() {
   return (
     <div className="text-black text-center p-6">
       <h1 className="text-3xl">Contact me</h1>
-      <p className="my-4">
+      <p className="my-4 tracking-wide leading-8">
         To have a conversation, contact me at{" "}
-        <Link
+        <a
           className="hover:text-blue-400 transition-colors"
           href="mailto:gregorcox@gmail.com?Subject=Hey%20Gregor!"
           target="_top"
         >
           gregorcox@gmail.com
-        </Link>
+        </a>
       </p>
       <p className="mb-4">or find me on:</p>
       <div className="inline-flex">
-        <Link
+        <a
           href="https://www.linkedin.com/in/gregorcox/"
           rel="noopener noreferrer"
           target="_blank"
@@ -32,8 +32,8 @@ export default function Contact() {
             src={linkedin}
             width="80"
           />
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://www.github.com/gregorcox"
           target="_blank"
           rel="noopener noreferrer"
@@ -45,13 +45,13 @@ export default function Contact() {
             src={github}
             width="80"
           />
-        </Link>
+        </a>
       </div>
     </div>
   );
 }
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Me - Gregor Cox",
   description: "Connect with me through LinkedIn or GitHub",
 };

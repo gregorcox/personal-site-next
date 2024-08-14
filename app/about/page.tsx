@@ -48,6 +48,6 @@ export default function Contact() {
 }
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About - Gregor Cox",
   description: "About me",
 };
