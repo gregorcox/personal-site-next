@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div className="navbar flex p-5 border-b-2 border-white bg-gray-800">
       <div className="flex-1">
-        <Link href="/" className="text-2xl uppercase">
+        <Link href="/" className="text-2xl uppercase text-white">
           Gregor Cox
         </Link>
       </div>
