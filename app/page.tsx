@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-[url('../public/images/london.jpg')] bg-cover h-[calc(100vh-74px)] w-screen max-w-full text-white">
-      <div className="text-center p-28">
+      <div className="text-center p-6 md:p-28">
         <h1 className="text-4xl font-bold py-5">Hello, I'm Gregor</h1>
         <p className="text-2xl mb-10">
           I'm a London based software developer focused on writing clean,
