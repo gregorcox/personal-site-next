@@ -32,6 +32,6 @@ body {
   }
 
   .nav-link {
-    @apply text-zinc-400 hover:text-white transition-colors uppercase font-bold;
+    @apply text-gray-400 hover:text-white transition-colors uppercase font-bold;
   }
 }
