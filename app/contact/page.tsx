@@ -2,7 +2,6 @@ import github from "@/public/images/github.png";
 import linkedin from "@/public/images/linkedin.png";
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Contact() {
   return (
