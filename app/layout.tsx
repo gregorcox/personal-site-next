@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Oxygen } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "./NavBar";
 
-const inter = Oxygen({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
 });
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <NavBar />
         <main>
           <div>{children}</div>
