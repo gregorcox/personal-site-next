@@ -34,4 +34,8 @@ body {
   .nav-link {
     @apply text-gray-400 hover:text-white transition-colors uppercase font-bold block mt-4 md:mt-0;
   }
+
+  .project-section {
+    @apply flex mt-8 border-dotted border-gray-500 pb-12 border-b-4 flex-col-reverse md:mt-12;
+  }
 }
