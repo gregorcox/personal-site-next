@@ -49,7 +49,7 @@ export default function Projects() {
                 <span>
                   {" - "}
                   <a
-                    className="text-blue-400"
+                    className="text-lg text-blue-400"
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
