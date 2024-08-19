@@ -9,7 +9,7 @@ export default function Projects() {
         <Image
           alt={name}
           className="w-full h-auto max-w-[90%] mb-4 border-2 border-black"
-          key={id}
+          key={image.src}
           src={image}
         />
       ));

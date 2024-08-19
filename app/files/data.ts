@@ -6,8 +6,22 @@ import news1 from "@/public/images/news1.png";
 import news2 from "@/public/images/news2.png";
 import spending1 from "@/public/images/spending1.png";
 import spending2 from "@/public/images/spending2.png";
+import { StaticImageData } from "next/image";
 
-export const data = {
+export interface Project {
+  id: number;
+  name: string;
+  github: string;
+  link?: string;
+  descriptionBlocks: string[];
+  images: StaticImageData[];
+}
+
+export interface Data {
+  projects: Project[];
+}
+
+export const data: Data = {
   projects: [
     {
       id: 1,
@@ -15,7 +29,7 @@ export const data = {
       github: "https://www.github.com/gregorcox/Event-Finder-Project",
       descriptionBlocks: [
         "At CodeClan, my final project involved collaborating as an agile team of four to create an single-page informational web application using vanilla JavaScript. Together we built Eventfull, a full-stack JavaScript app that allows users to search for events based on category, dates and location.",
-        "The app uses two APIs - Skiddle and GeoCode) to fetch event and geographical data. Search results are presented on an interactive Leaflet map where users can click through to see more information and buy tickets. The user can also save their favourite events through the use of a MongoDB NoSQL database. JavaScript is used heavily on the front-end to create a modern looking, responsive and dynamic UI.",
+        "The app uses two APIs (Skiddle and GeoCode) to fetch event and geographical data. Search results are presented on an interactive Leaflet map where users can click through to see more information and buy tickets. The user can also save their favourite events through the use of a MongoDB NoSQL database. JavaScript is used heavily on the front-end to create a modern looking, responsive and dynamic UI.",
         "In addition to learning a huge amount about JavaScript, we also had the opportunity to practise agile methodologies to plan and coordinate as a team. Stand ups, sprints, scrum boards and pair programming were all used to deliver a fully functional MVP with additional features before the deadline.",
       ],
       images: [event1, event2],
