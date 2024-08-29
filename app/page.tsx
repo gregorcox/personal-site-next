@@ -12,7 +12,7 @@ export default function Home() {
         </p>
         <Link
           href="/projects"
-          className="bg-white text-black py-5 px-12 border-2 border-gray-800 text-xl font-bold hover:text-white hover:bg-gray-800 hover:border-white transition-all"
+          className="bg-white text-black py-5 px-12 border-2 border-gray-800 text-xl font-bold hover:text-white hover:bg-gray-800 hover:border-white transition duration-300"
         >
           View my work
         </Link>

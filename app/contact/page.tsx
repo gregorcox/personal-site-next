@@ -26,7 +26,7 @@ export default function Contact() {
         >
           <Image
             alt="LinkedIn"
-            className="mx-4 pb-2 border-b-white border-b-8 hover:border-blue-400 transition-all"
+            className="mx-4 pb-2 border-b-white border-b-8 hover:border-blue-400 transition duration-300"
             height="80"
             src={linkedin}
             width="80"
@@ -39,7 +39,7 @@ export default function Contact() {
         >
           <Image
             alt="GitHub"
-            className="mx-4 pb-2 border-b-white border-b-8 hover:border-blue-400 transition-all"
+            className="mx-4 pb-2 border-b-white border-b-8 hover:border-blue-400 transition duration-300"
             height="80"
             src={github}
             width="80"

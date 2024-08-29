@@ -10,6 +10,7 @@ export default function Projects() {
           alt={name}
           className="w-full h-auto max-w-[90%] mb-4 border-2 border-black"
           key={image.src}
+          quality={100}
           src={image}
         />
       ));
