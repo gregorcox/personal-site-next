@@ -18,8 +18,12 @@ const Navbar = () => {
         href: "/",
       },
       {
-        label: "The park",
+        label: "About",
         href: "/about",
+      },
+      {
+        label: "Projects",
+        href: "/projects",
       },
       {
         label: "Contact",
@@ -34,7 +38,7 @@ const Navbar = () => {
             <Link
               className={classnames({
                 "nav-link": true,
-                "!text-green-400": href === currentPath,
+                "!text-white": href === currentPath,
               })}
               href={href}
               onClick={() => isOpen && setIsOpen(false)}
@@ -48,12 +52,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex text-white p-5 bg-green-950">
+    <nav className="flex text-white p-5 border-b-2 border-white bg-gray-800">
       <div className="container mx-auto flex justify-between items-start md:items-center">
         <div className="flex-1">
-          <Link href="/" className="text-xl uppercase">
-            Manor Farm <br />{" "}
-            <span className="text-green-400">Business Park</span>
+          <Link href="/" className="text-2xl uppercase">
+            Gregor Cox
           </Link>
         </div>
         <div className="flex flex-col items-end">
