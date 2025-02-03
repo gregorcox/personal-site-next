@@ -32,7 +32,7 @@ body {
   }
 
   .nav-link {
-    @apply text-gray-400 hover:text-white transition-colors uppercase font-bold block mt-4 md:mt-0;
+    @apply text-white hover:text-green-400 transition-colors uppercase block mt-4 md:mt-0;
   }
 
   .project-section {
