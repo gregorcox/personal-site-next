@@ -3,6 +3,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "About - Gregor Cox",
+  description: "About me",
+};
+
 export default function About() {
   return (
     <div className="text-black text-center py-6 px-6 md:px-28">
@@ -46,8 +51,3 @@ export default function About() {
     </div>
   );
 }
-
-export const metadata: Metadata = {
-  title: "About - Gregor Cox",
-  description: "About me",
-};

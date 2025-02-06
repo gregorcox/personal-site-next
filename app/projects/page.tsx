@@ -2,6 +2,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { data } from "../files/data";
 
+export const metadata: Metadata = {
+  title: "Projects - Gregor Cox",
+  description: "Check out my latest projects",
+};
+
 export default function Projects() {
   const projects = data.projects.map(
     ({ descriptionBlocks, github, id, images, link, name }) => {
@@ -71,8 +76,3 @@ export default function Projects() {
 
   return <div className="text-black p-6">{projects}</div>;
 }
-
-export const metadata: Metadata = {
-  title: "Projects - Gregor Cox",
-  description: "Check out my latest projects",
-};

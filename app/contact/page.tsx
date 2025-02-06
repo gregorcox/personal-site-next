@@ -3,6 +3,11 @@ import linkedin from "@/public/images/linkedin.png";
 import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+  title: "Contact Me - Gregor Cox",
+  description: "Connect with me through LinkedIn or GitHub",
+};
+
 export default function Contact() {
   return (
     <div className="text-black text-center p-6">
@@ -49,8 +54,3 @@ export default function Contact() {
     </div>
   );
 }
-
-export const metadata: Metadata = {
-  title: "Contact Me - Gregor Cox",
-  description: "Connect with me through LinkedIn or GitHub",
-};
