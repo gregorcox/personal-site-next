@@ -8,7 +8,7 @@ export default function Projects() {
       const projectImages = images.map((image) => (
         <Image
           alt={name}
-          className="w-full h-auto max-w-[90%] mb-4 border-2 border-black shadow-lg rounded-md"
+          className="w-full h-auto max-w-[90%] border-2 border-black shadow-lg rounded-md"
           key={image.src}
           quality={100}
           src={image}
@@ -29,7 +29,9 @@ export default function Projects() {
 
       return (
         <div className={className} key={id}>
-          <div className="w-auto mt-8 md:w-1/2 md:mt-0">{projectImages}</div>
+          <div className="flex flex-col items-center gap-4 w-auto mt-8 md:w-1/2 md:mt-0">
+            {projectImages}
+          </div>
 
           <div
             className={`tracking-wide leading-8 w-full md:w-1/2 ${
