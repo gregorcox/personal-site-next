@@ -39,7 +39,7 @@ export default function Contact() {
           <Image
             src={profile}
             alt="Gregor Cox"
-            className="h-auto w-[90%] md:max-w-96"
+            className="h-auto w-[90%] shadow-lg md:max-w-96"
           />
         </div>
       </div>

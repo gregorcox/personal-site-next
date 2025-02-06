@@ -8,7 +8,7 @@ export default function Projects() {
       const projectImages = images.map((image) => (
         <Image
           alt={name}
-          className="w-full h-auto max-w-[90%] mb-4 border-2 border-black"
+          className="w-full h-auto max-w-[90%] mb-4 border-2 border-black shadow-lg"
           key={image.src}
           quality={100}
           src={image}
