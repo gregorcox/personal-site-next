@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Contact() {
+export default function About() {
   return (
     <div className="text-black text-center py-6 px-6 md:px-28">
       <h1 className="text-3xl">About me</h1>
@@ -39,7 +39,7 @@ export default function Contact() {
           <Image
             src={profile}
             alt="Gregor Cox"
-            className="h-auto w-[90%] shadow-lg md:max-w-96"
+            className="h-auto w-[90%] shadow-lg md:max-w-96 rounded-sm"
           />
         </div>
       </div>
