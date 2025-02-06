@@ -20,7 +20,7 @@ export default function Home() {
 
       <div className="absolute inset-0 bg-black/20"></div>
 
-      <div className="relative text-center p-6 z-10 max-w-prose md:p-0">
+      <div className="relative text-center p-6 z-10 max-w-prose md:p-0 fade-in">
         <h1 className="text-4xl font-bold py-5 drop-shadow-md">
           Hello, I'm Gregor
         </h1>
