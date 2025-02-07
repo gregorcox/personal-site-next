@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import { data } from "../files/data";
 
 export const metadata: Metadata = {
@@ -22,7 +24,9 @@ export default function Projects() {
 
       const description = descriptionBlocks.map((block, index) => (
         <>
-          <p key={index}>{block}</p>
+          <p key={index} className="text-lg tracking-wide leading-8">
+            {block}
+          </p>
           <br />
         </>
       ));
@@ -43,31 +47,30 @@ export default function Projects() {
               id % 2 === 0 && `mr-8`
             }`}
           >
-            <h2 className="text-2xl mb-5">{name}</h2>
-            <div className="my-5">
+            <h2 className="text-3xl font-medium mb-5">{name}</h2>
+            {description}
+            <div className="flex gap-3 flex-col">
               <a
-                className="text-lg text-blue-400"
                 href={github}
-                rel="noopener noreferrer"
                 target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto md:mx-0 flex items-center justify-center gap-2 max-w-[300px] min-w-[220px] bg-blue-500 text-white py-3 px-6 text-lg font-medium rounded-3xl hover:cursor-pointer hover:bg-blue-600 transition duration-300 focus:ring-4 focus:ring-gray-400"
               >
                 GitHub
+                <FaGithub />
               </a>
               {link && (
-                <span>
-                  {" - "}
-                  <a
-                    className="text-lg text-blue-400"
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Link
-                  </a>
-                </span>
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto md:mx-0 flex items-center justify-center gap-2 max-w-[300px] min-w-[220] bg-blue-500 text-white py-3 px-6 text-lg font-medium rounded-3xl hover:cursor-pointer hover:bg-blue-600 transition duration-300 focus:ring-4 focus:ring-gray-400"
+                >
+                  See the project
+                  <FiExternalLink />
+                </a>
               )}
             </div>
-            {description}
           </div>
         </div>
       );
