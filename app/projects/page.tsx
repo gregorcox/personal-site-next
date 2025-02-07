@@ -49,7 +49,7 @@ export default function Projects() {
           >
             <h2 className="text-3xl font-medium mb-5">{name}</h2>
             {description}
-            <div className="flex gap-3 flex-col">
+            <div className="flex gap-3 flex-col lg:flex-row">
               <a
                 href={github}
                 target="_blank"
