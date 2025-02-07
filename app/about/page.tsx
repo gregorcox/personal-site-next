@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="text-black text-center py-6 px-6 md:px-28">
-      <h1 className="text-3xl">About me</h1>
+      <h1 className="text-4xl">About me</h1>
 
       <div className="flex flex-col mt-8 md:flex-row justify-evenly">
         <div className="text-left w-auto tracking-wide leading-8 md:w-1/2">
@@ -27,7 +27,7 @@ export default function About() {
           web applications for a wide range of clients.
           <br />
           <br />
-          Before moving to London I graduated from CodeClan's software
+          Before moving to London I graduated from CodeClan’s software
           development course in Edinburgh. Throughout the 16 week course I
           developed strong programming skills in Ruby, Java, and JavaScript with
           a particular focus on web development. The course involved around 800

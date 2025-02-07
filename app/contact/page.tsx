@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <div className="text-black text-center p-6">
-      <h1 className="text-3xl">Contact me</h1>
+      <h1 className="text-4xl">Contact me</h1>
       <p className="my-4 tracking-wide leading-8">
         To have a conversation, contact me at{" "}
         <a
