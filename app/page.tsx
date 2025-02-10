@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative h-[calc(100vh-74px)] w-screen max-w-full text-white flex items-center justify-center">
+    <div className="relative h-[calc(100vh-70px)] w-screen max-w-full text-white flex items-center justify-center">
       <Image
         src="/images/london.jpg"
         alt="London skyline"
@@ -31,7 +31,7 @@ export default function Home() {
         </p>
         <Link
           href="/projects"
-          className="w-full mx-auto flex items-center justify-center gap-2 max-w-[300px] bg-white text-black py-4 px-10 text-xl font-bold rounded-3xl border-2 border-gray-800 hover:text-white hover:bg-gray-800 hover:border-white transition duration-300 focus:ring-4 focus:ring-gray-400"
+          className="w-full mx-auto flex items-center justify-center gap-2 max-w-[260px] bg-white text-black py-4 px-10 text-xl font-bold rounded-2xl border-2 border-gray-800 hover:text-white hover:bg-gray-800 hover:border-white transition duration-300 focus:ring-4 focus:ring-gray-400"
         >
           View my work
           <FaArrowRight />

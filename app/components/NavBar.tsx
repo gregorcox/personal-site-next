@@ -28,10 +28,6 @@ const Navbar = () => {
         href: "/",
       },
       {
-        label: "About",
-        href: "/about",
-      },
-      {
         label: "Projects",
         href: "/projects",
       },
@@ -68,7 +64,7 @@ const Navbar = () => {
   return (
     <nav className="flex text-white p-5 border-b-2 border-white bg-gray-800">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl uppercase select-none">
+        <Link href="/" className="text-lg select-none font-bold">
           Gregor Cox
         </Link>
 
